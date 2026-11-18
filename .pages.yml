@@ -60,10 +60,58 @@ content:
         type: rich-text
 
   # ---------------------------------------------------------------
+  # Projects: content/projects/*.md
+  # ---------------------------------------------------------------
+  - name: projects
+    label: Projects
+    type: collection
+    path: content/projects
+    filename: "{primary}.md"
+    format: toml-frontmatter
+    exclude: ["_index.md"]
+    view:
+      fields: [title, date, draft, tags]
+      primary: title
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm:ssXXX
+        default: now
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+      - name: description
+        label: Description
+        type: text
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: categories
+        label: Categories
+        type: string
+        list: true
+      - name: body
+        label: Body
+        type: rich-text
+
+  # ---------------------------------------------------------------
   # About page: content/about.md
   # ---------------------------------------------------------------
   - name: about
-    label: About page
+    label: About Page
     type: file
     path: content/about.md
     format: toml-frontmatter
@@ -87,10 +135,28 @@ content:
         type: rich-text
 
   # ---------------------------------------------------------------
-  # Homepage: content/_index.md (no front matter, plain markdown)
+  # Contact page: content/contact.md
   # ---------------------------------------------------------------
-  - name: home
-    label: Homepage
+  - name: contact
+    label: Contact Page
     type: file
-    path: content/_index.md
-    format: raw
+    path: content/contact.md
+    format: toml-frontmatter
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm:ssXXX
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+      - name: body
+        label: Body
+        type: rich-text
