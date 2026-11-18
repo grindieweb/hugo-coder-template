@@ -26,7 +26,7 @@ Go back to the Actions tab and wait for the action to deploy.
 
 ## Site is Live
 
-Go check our your new live website!!!
+Go check out your new live website!!!
 
 
 
