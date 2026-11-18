@@ -2,21 +2,15 @@ Following the steps below, you can setup a personal website on either a custom d
 
 # Getting Started
 
-## Fork Template
-
-Fork one of the following template repos:
-
-https://github.com/grindieweb/hugo-coder-template
-
-https://github.com/grindieweb/hugo-risotto-template
+Fork this repo :)
 
 ## Setup GitHub Pages Deployment
 
-Setup GitHub pages to deploy from GitHub actions and optionally setup a custom domain.
+Next, we will setup GitHub pages to deploy from GitHub actions and optionally setup a custom domain.
 
 Go to your repo settings, select Pages, select a deployment source of "GitHub Actions"
 
-If you wish to setup a custom domain, copy the \*.github.io URL under the Custom Domain heading and setup a CNAME/ALIAS (for apex) pointing to your subdomain. By default, this is YOURUSERNAME.github.io.
+If you wish to setup a custom domain, copy the \*.github.io URL under the Custom Domain heading and setup a CNAME/ALIAS (or apex) pointing to your subdomain. By default, this is YOURUSERNAME.github.io.
 
 Paste the domain/subdomain you setup into the custom domain field in GitHub and click save to perform the DNS check.
 
