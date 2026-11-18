@@ -28,6 +28,21 @@ Go back to the Actions tab and wait for the action to deploy.
 
 Go check out your new live website!!!
 
+To add a new post, simply add a .md file to your content/posts folder and commit. The site will rebuild and publish your changes.
 
+# Adding a CMS
 
+A CMS is a Content Management System. While you can add new posts manually through the GitHub interface in markdown files, a CMS helps you managed content, images, files and more.
 
+A FREE easy CMS that deploys in one-click is [PagesCMS](https://pagescms.org)
+
+## Install PagesCMS
+
+1. Go to https://pagescms.org
+2. Click Sign-in in the top right corner.
+3. Click "Sign in with GitHub"
+4. Authorize the app to see your GitHub profile
+5. Click "Install GitHub App"
+6. Select "Only select repositories" and select your website repo.
+7. Select "Install"
+8. The PagesCMS dashboard should now load, select your repo to open in the CMS.
